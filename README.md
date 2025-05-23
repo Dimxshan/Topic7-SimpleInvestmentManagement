@@ -1,81 +1,150 @@
-# Topic7-SimpleInvestmentManagement
+<div align="center">
 
-IF-48-INT
+# 💰 Simple Investment Management Application 💰
 
-### ARRANGED BY:
+<div align="center">
 
-1. EDWARD WU; 103012440003 As Leader 
+> *"The best investment you can make is in yourself and your knowledge"* 📚✨  
+> *"Risk comes from not knowing what you're doing"* - Warren Buffett 🎯
 
-2. DIMAS RADITYA PUTRA HANDOKO; 103012440016 As Member Group
+**🚀 Your gateway to risk-free investment learning! 🚀**
 
+</div>
 
-# Basic Investment Management App - Code Walkthrough
+---
 
-# Introduction
+## 🎮🔥 What Can You Do? 🔥🎮
 
-This Go application allows users to track a virtual investment portfolio consisting of different asset classes: equities (S&P 500 stocks), commodities (gold, silver), and cryptocurrencies. Users are allowed to buy and sell assets, track portfolio performance, and simulate movement in the market over time. The application also makes posts on the portfolio's value, daily volatility, and return on investment (ROI).
+<table>
+<tr>
+<td>
 
-### Key Functions in the Code
+### 📈 **Trade Like a Wall Street Pro** 
+- 🏢 **S&P 500 Giants**: Tesla, Apple, Microsoft, Amazon, Google & more
+- 🥇 **Precious Metals**: Gold & Silver commodities 
+- 🚀 **Crypto Madness**: Bitcoin, Ethereum, Dogecoin & 7 others
+- 💹 **Real-time Portfolio**: Watch your money grow (or vanish)!
 
-*Asset Struct*
+</td>
+<td>
 
-A struct to hold a single investment asset (e.g., a cryptocurrency or stock).
-Saves details like the asset name, price, quantity, total price, NAV (Net Asset Value), volatility, and daily price change.
+### ⏰ **Time Travel Magic**
+- ⚡ Jump: 1 hour, 4 hours, 1 day, 1 week, 1 month
+- 🌊 Market volatility simulation
+- 🎢 Crypto swings ±30% | Stocks ±5%
+- 📊 **"Time in the market beats timing the market"**
 
-*Portfolio Struct*
+</td>
+</tr>
+</table>
 
-Holds the user portfolio information, including the balance (funds available for investing), assets owned, and setting the current day and date.
-Stores historical portfolio performance and the maximum value (ATH - All-Time High).
+---
 
-*Simulating Price Changes*
+## 🎯🌈 Asset Playground 🌈🎯
 
-The SimulatePriceChange() method alters asset prices as per their volatility and selected time frame.
-It uses random number generation to simulate actual market patterns such that every asset reacts in terms of its volatility.
-Stock, commodity, and cryptocurrency prices are altered differently as per their market nature.
+| 🎨 **Asset Type** | 💎 **Examples** | 📊 **Volatility** | 🔥 **Risk Level** | 💭 **Vibe** |
+|:---:|:---:|:---:|:---:|:---:|
+| 📈 **Stocks** | Apple ($145), Tesla ($750) | `±5%` | 🟡 Moderate | *Steady & Reliable* |
+| 🥇 **Commodities** | Gold ($1,800), Silver ($25) | `±3%` | 🟢 Low | *Safe Haven* |
+| 🚀 **Crypto** | Bitcoin ($103K), Dogecoin ($0.22) | `±30%` | 🔴 YOLO Mode | *To The Moon!* 🌙 |
 
-*Purchase and Sale of Assets*
+---
 
-BuyAsset() and SellAsset() functions allow the user to purchase or sell assets by entering the asset name and quantity.
-The system checks whether the user has sufficient balance for buying and enough quantity for selling.
+## 🚀✨ Quick Start Magic ✨🚀
 
-*Portfolio Display*
+<div align="center">
 
-The routine ShowPortfolio() displays the current user's balance, portfolio value total (balance + NAV of holdings), and specific details of holdings like profit/loss and return percentage.
-Time Simulation
-The routine AdvanceTime() moves time ahead by the chosen interval (1 hour, 1 day, 1 week).
-It calculates asset prices, portfolio NAV, and tracks principal price movements, illustrating a summary of principal market movement.
+```bash
+# 🎯 Clone the treasure
+git clone https://github.com/Dimxshan/Topic7-SimpleInvestmentManagement.git
 
-*Investment History*
+# 🏃‍♂️ Jump in
+cd Topic7-SimpleInvestmentManagement
 
-The app tracks each day's portfolio values and ROI, storing them in the history array.
-The ShowInvestmentHistory() method displays the portfolio's historical performance.
+# 🎮 Start your journey
+go run no6.go
+```
 
-# Main Program Flow
+> 💡 **"Investasi terbaik adalah investasi pada pengetahuan, karena itu menghasilkan bunga terbaik"** - Benjamin Franklin
 
-### User Input
+</div>
 
-When initialized, the program prompts the user for his name and starting balance.
-Portfolio is set up with the input balance and an empty list of assets.
+---
 
-# Interactive Menu
+## 🎪🎯 How to Play & Win 🎯🎪
 
-### The main loop presents the user with several options:
+<div align="center">
 
-- View portfolio
-- View available assets (stocks, commodities, cryptocurrencies)
-- Buy/Sell assets
-- Advance time
-- View investment summary
+```
+🌟 Set Your Stage → 🔍 Browse Markets → 💰 Make Your Move → ⏰ Time Skip → 📊 Celebrate! 🌟
+```
 
-### Time Interval Options
+</div>
 
-The TimeInterval struct defines several time intervals, which determine the volatility factor and price change scale. These intervals are used to input a new time interval during runtime.
-The user may choose a time period (e.g. 1 hour, 1 day) to experiment with how prices evolve over time.
+| Step | 🎨 Action | 💭 Description |
+|:---:|:---:|:---|
+| 1️⃣ | **🎭 Set Your Stage** | Pick starting balance (`$10,000` recommended) |
+| 2️⃣ | **🔍 Browse Markets** | Explore stocks, commodities, crypto prices |
+| 3️⃣ | **💰 Make Your Move** | Buy assets when prices look juicy |
+| 4️⃣ | **⏰ Time Skip** | Fast forward to see market drama |
+| 5️⃣ | **🎉 Celebrate or Learn** | Track your portfolio performance |
+| 6️⃣ | **🔄 Repeat & Master** | Keep trading and growing! |
 
-### Investment Summary
+---
 
-The ShowInvestmentSummary() function displays a summary of overall portfolio worth and ROI during the simulation.
+## 🎨🛠️ Built With Love 🛠️🎨
 
-# Conclusion
+<div align="center">
 
-This application offers a comprehensive simulation for managing investments, where users can interactively make decisions about buying and selling assets, track portfolio performance, and simulate market changes based on different time intervals. It's a useful tool for understanding the dynamics of asset management and the impacts of market volatility.
+| 🔧 **Tech** | 🌟 **Why** |
+|:---:|:---|
+| 🐹 **Go Language** | Fast, efficient, and powerful |
+| 💻 **Pure CLI** | No distractions, pure focus |
+| 🎲 **Market Simulation** | Realistic volatility, zero consequences |
+
+</div>
+
+---
+
+## 👨‍💻🌟 The Dream Team 🌟👩‍💻
+
+<div align="center">
+
+**🎯 Edward Wu** & **🚀 Dimas Raditya**  
+*From Universitas Telkom, Bandung* 🏛️  
+
+> *"Making finance education fun, one line of code at a time!"* 💫  
+> *"Belajar investasi sambil bersenang-senang!"* 🎪
+
+</div>
+
+---
+
+<div align="center">
+
+## 🎪 Fun Features Highlights 🎪
+
+📈 **Real-time NAV calculation** - *watch your money dance*  
+🎢 **Investment history tracking** - *chase that all-time high*  
+⏰ **Multiple time intervals** - *be the master of time*  
+
+---
+
+### 💡 Pro Trading Wisdom 💡
+
+> 🌟 **"Don't put all your eggs in one basket"** - Diversify like a pro!  
+> 🎯 **"Buy low, sell high"** - Classic but golden!  
+> 🚀 **"HODL when in doubt"** - Crypto trader's motto!  
+
+---
+
+### ⚠️🎪 Disclaimer Zone 🎪⚠️
+
+**Virtual money only - your real wallet is safe!** 😄💸  
+*Practice makes perfect, but this is just practice!* 🎭
+
+---
+
+**🌈 Happy Trading & Learning! 🌈**
+
+</div>
