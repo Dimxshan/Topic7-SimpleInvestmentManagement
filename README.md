@@ -40,7 +40,7 @@
 
 ---
 
-## 🎯🌈 Asset Playground 🌈🎯
+## 🎯 Asset Playground 🎯
 
 | 🎨 **Asset Type** | 💎 **Examples** | 📊 **Volatility** | 🔥 **Risk Level** | 💭 **Vibe** |
 |:---:|:---:|:---:|:---:|:---:|
@@ -50,7 +50,7 @@
 
 ---
 
-## 🚀✨ Quick Start Magic ✨🚀
+## ✨ Quick Start Magic ✨
 
 <div align="center">
 
@@ -106,7 +106,7 @@ go run no6.go
 
 ---
 
-## 👨‍💻🌟 The Dream Team 🌟👩‍💻
+## 👨‍💻 The Dream Team 👩‍💻
 
 <div align="center">
 
@@ -138,13 +138,13 @@ go run no6.go
 
 ---
 
-### ⚠️🎪 Disclaimer Zone 🎪⚠️
+### ⚠️ Disclaimer Zone ⚠️
 
 **Virtual money only - your real wallet is safe!** 😄💸  
 *Practice makes perfect, but this is just practice!* 🎭
 
 ---
 
-**🌈 Happy Trading & Learning! 🌈**
+** Happy Trading & Learning! **
 
 </div>
